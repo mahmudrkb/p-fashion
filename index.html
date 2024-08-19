@@ -19,7 +19,7 @@
     
 
 </head>
-<body class="roboto-regular mx-auto ">
+<body class="roboto-regular  ">
 
     <header class="bg-[#FFFBF0] pb-10">
 
@@ -34,12 +34,27 @@
                     text-2xl
                     font-bold">Penguin <span class="text-[#363958] ">Fashion</span></h3> -->
         
-                    <ul class="grid grid-cols-4 font-medium ">
-                        <li>Home</li>
-                        <li>Product</li>
-                        <li>About Us</li>
-                        <li>Contact Us</li>
+                    <ul class=" hidden md:flex justify-between font-medium ">
+                        <li class=""  >Home</li>
+                        <li class="">Product</li>
+                        <li class="">About Us</li>
+                        <li class="">Contact Us</li>
+
+                        
+
                     </ul>
+
+                    <li class=" flex justify-end md:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                          </svg>
+
+                    </li>
+
+                    
+                      
+
+                    
                 </nav>
 
             </div>
@@ -49,7 +64,7 @@
 
            <div class="container">          
     
-            <div class="grid grid-cols-2  items-center content-end">
+            <div class="grid grid-cols-1 md:grid-cols-2  items-center content-end">
                 <div>
                     <h1 class=" bebas-neue-regular text-7xl text-[#FABE4C]">Be the Penguins <br>
                        <span class="text-[#363958]"> of Winter</span>
@@ -92,12 +107,12 @@
         <section class="woman-section my-10">
             <div class="container">
                 <div class="woman-jacket">
-                    <h3 class="text-[#363958] text-5xl bebas-neue-regular mb-6">
+                    <h3 class="text-[#363958] text-5xl bebas-neue-regular mb-6 text-center md:text-start">
                         WOMAN JACKET
 
                     </h3>
 
-                    <div class="woman-parents grid grid-cols-3 gap-5">
+                    <div class="woman-parents md:grid grid-cols-3 gap-5">
 
                         <div class="card-1 shadow-2xl rounded-2xl p-5">
                             <img class="bg-slate-100 p-6 rounded-3xl "src=".//images/jacket-1.png" alt="">
@@ -181,12 +196,12 @@
         <section class="man-section my-10">
             <div class="container">
                 <div class="man-jacket">
-                    <h3 class="text-[#363958] text-5xl bebas-neue-regular my-10">
+                    <h3 class="text-[#363958] text-5xl bebas-neue-regular my-10 text-center md:text-start">
                         MAN JACKET
 
                     </h3>
 
-                    <div class="man-parents grid grid-cols-3 gap-5">
+                    <div class="man-parents md:grid grid-cols-3 gap-5">
 
                         <div class="card-1 shadow-2xl rounded-2xl p-5">
                             <img class="bg-slate-100 p-6 rounded-3xl "src=".//images/jacket-4.png" alt="">
@@ -274,9 +289,14 @@
 
         <section class="footer-section my-24">
             <div class="container">
-                <div class="footer-parents grid grid-cols-2 justify-center items-center">
+                <div class="footer-parents   md:flex  flex-row-reverse md:justify-end items-center">
+
 
                     <div class="">
+                        <img class="my-5 mx-auto" src=".//images/shopping.png" alt="">
+                    </div>
+
+                    <div class=" w-full">
                         <div class="part-1 flex gap-14 items-center shadow-xl p-4 rounded-2xl mb-10 ">
                             <img  class="w-[78px] h-[82px]" src="./icons/house.png" alt="">
                             <div>
@@ -305,7 +325,7 @@
                             </div>
                         </div>
 
-                        <div class="part-3 flex gap-14 items-center shadow-xl p-4 rounded-2xl mb-10">
+                        <div class="part-3 flex gap-14  items-center shadow-xl p-4 rounded-2xl mb-10">
                             <img class="w-[78px] h-[82px]" src="./icons/question.png" alt="">
                             <div>
                                 <h4 class="text-2xl font-bold mb-4" >
@@ -321,9 +341,8 @@
                         </div>
 
                     </div>
-                    <div>
-                        <img src=".//images/shopping.png" alt="">
-                    </div>
+
+                   
 
                 </div>
 
